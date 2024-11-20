@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
+    console.log("REQ");
     const body = req.body;
     res.json({sum: body.a + body.b});
 });
